@@ -3,13 +3,31 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import { AppProvider } from './context/AppContext';
+import NavBar from './components/layout/NavBar';
+import Sidebar from './components/sidebar/SideBar';
+import PanelNotificaciones from './components/notificaciones/PanelNotificaciones';
+import Dashboard from './pages/Dashboard';
 
-function App() {
 
+export default function App() {
   return (
-    <>
-    </>
-  )
+    <AppProvider>
+      <AppLayout />
+    </AppProvider>
+  );
 }
 
-export default App
+function AppLayout() {
+  return (
+    <div className="app-wrapper">
+      <NavBar />
+      <div className="app-body">
+        <Sidebar />
+        <main className="main-content">
+          {/* <Dashboard /> */}
+        </main>
+      </div>
+    </div>
+  );
+}
