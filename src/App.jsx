@@ -6,7 +6,8 @@ import './App.css'
 import { AppProvider } from './context/AppContext';
 import NavBar from './components/layout/NavBar';
 import Sidebar from './components/sidebar/SideBar';
-// import Dashboard from './components/dashboard/Dashboard';
+import PanelNotificaciones from './components/notificaciones/PanelNotificaciones';
+import Dashboard from './pages/Dashboard';
 
 
 export default function App() {

@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
-import './SideBar.css';
 import {useApp} from '../../context/AppContext';
+import './SideBar.css';
 
 // Array de objetos que representan los elementos del menú del sidebar, cada uno con un nombre y un icono svg.
 const menuItems = [ 
@@ -109,11 +109,11 @@ export default function SideBar() {
          }
         <nav className="sidebar-nav">
           {menuItems.map((item) => (
-            <button key={item.id} className={`nav-item ${activeItem === item.id ? "nav-item--active" : ""}`} onClick={() => handleClick(item)} title={!sidebarOpen ? item.label : undefined}>
-              <span className="nav-icon">{item.icon}</span>
+            <button key={item.id} className={`nav-item ${activeItem === item.id ? "nav-item--active" : ""}`} onClick={() => handleClick(item)} title={!sidebarOpen ? item.nombre : undefined}>
+              <span className="nav-icon">{item.icono}</span>
               {sidebarOpen && (
                 <>
-                  <span className="nav-label">{item.label}</span>
+                  <span className="nav-label">{item.nombre}</span>
                   <span className="nav-arrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                       <polyline points="9 18 15 12 9 6" />
