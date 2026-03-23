@@ -15,10 +15,11 @@ function Logo({ collapsed = false }) {
   return (
     <div style={{display: 'flex', alignItems:'center', gap:8}}>
         {/* Logo Q de qinamical */}
-        <img src="../../assets/Qlogo.png" alt="QLogo" />
+        <img src="/public/images/Qlogo.png" alt="QLogo"  style={{height: '50px', width: '50px', marginRight: '0px', marginBottom: '4px'}}/>
+        
         {/* Inamical cuando se abre el menú */}
         {!collapsed && (
-            <img src="../../assets/inamicalLogo.png" alt='letraLogo' />
+            <img src="/public/images/inamicalLogo.png" alt='letraLogo'  style={{height: '40px', width: '120px',marginBottom: '0px'}}/>
         )}
     </div>
   )

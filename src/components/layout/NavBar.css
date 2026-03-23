@@ -39,13 +39,13 @@
   letter-spacing: -0.3px;
 }
 
-.navbar-right {
+.navbar-derecha {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.icon-btn {
+.boton-icono {
   position: relative;
   display: flex;
   align-items: center;
@@ -57,8 +57,8 @@
   transition: background var(--transition), color var(--transition);
 }
 
-.icon-btn:hover,
-.icon-btn.active {
+.boton-icono:hover,
+.boton-icono.active {
   background: #FEF2F2;
 }
 
@@ -72,10 +72,10 @@
   border: 2px solid #fff;
 }
 
-.badge-orange { background: var(--orange); }
+.badge-naranja { background: var(--orange); }
 .badge-red { background: #EF4444; }
 
-.user-chip {
+.perfil-usuario {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -87,9 +87,9 @@
   cursor: pointer;
 }
 
-.user-chip:hover { background: var(--orange-light); }
+.perfil-usuario:hover { background: var(--orange-light); }
 
-.user-avatar {
+.avatar-usuario {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -102,7 +102,7 @@
   justify-content: center;
 }
 
-.user-name {
+.nombre-usuario {
   font-weight: 700;
   font-size: 14px;
   color: var(--text-primary);
