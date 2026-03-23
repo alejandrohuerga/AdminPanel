@@ -63,6 +63,7 @@ export function NavBar() {
  * El icono se compone de tres líneas horizontales que simbolizan un menú desplegable.
  * 
  */
+
 function IconoHamburguesa() {
     return (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7941D" strokeWidth="2.5" strokeLinecap="round">
@@ -80,6 +81,7 @@ function IconoHamburguesa() {
  * Cuando el menú está abierto, el icono puede cambiar a una flecha que apunta hacia la izquierda para indicar la acción de cerrar el menú.
  * 
  */
+
 function IconoFlecha(){
     return (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7941D" strokeWidth="2.5" strokeLinecap="round">
@@ -94,6 +96,7 @@ function IconoFlecha(){
  * El icono se compone de una campana que simboliza las notificaciones.
  * 
  */
+
 function IconoNotificaciones() {
     return (
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
