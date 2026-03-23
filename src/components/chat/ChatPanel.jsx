@@ -37,6 +37,11 @@ const groupedContacts = chatContacts.reduce((acc, c) => {
  * Cada contacto muestra su nombre, estado (en línea o fuera de línea) y un mensaje que indica si el usuario está en línea o cuándo se desconectó.
  * El panel también se cierra automáticamente al hacer clic fuera de él, gracias a un event listener que detecta clics fuera del panel.
  * Este componente utiliza el contexto de la aplicación para gestionar el estado del panel activo y las funciones para abrir y cerrar los paneles.
+ * 
+ * @author Alejandro De la Huerga  
+ * @version 1.0.0
+ * @since 23/03/2026
+ * @returns {JSX.Element} El componente del panel de chat.
  */
 export default function ChatPanel() {
   // Se obtiene el estado del panel activo y las funciones para cambiarlo y cerrar todos los paneles desde el contexto de la aplicación.
